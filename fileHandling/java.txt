@@ -1,0 +1,7 @@
+Java is one of the most popular and widely used programming languages.
+
+Used to develop mobile apps, desktop apps, web apps, web servers, games, and enterprise-level systems.
+Java was invented by James Gosling and Oracle currently owns it. JDK 23 is the latest version of Java.
+Java's syntax is similar to C/C++.
+Popular platforms like LinkedIn, Amazon, and Netflix rely on Java for their back-end architecture, showcasing its stability and scalability across different environments.
+Popularity is so high that 3 Billion+ devices use Java across the world.

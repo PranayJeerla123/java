@@ -1,0 +1,74 @@
+package BusTicket;
+import java.util.*;
+public class Main {
+	static Scanner sc=new Scanner(System.in);
+	static ArrayList<User> al = new ArrayList<>();
+    static void register() {
+        	System.out.println("Enter name :  ");
+        	String name=sc.next();
+        	System.out.println("Enter phoneNumber :  ");
+        	String phno=sc.next();
+        	System.out.println("Enter password :  ");
+        	String password=sc.next();
+        	al.add(new User(name,phno,password));
+        	System.out.println("Successfully Registered");
+            login();
+    }
+    static void login() {
+    	System.out.println("Enter Phone Number :");
+    	String phno=sc.next();
+    	System.out.println("Enter Password");
+    	String password=sc.next();
+    	int f=0;
+    	for(User obj : al) {
+    		if(obj.getphonenumber().equals(phno) && obj.getpassword().equals(password)) {
+    			System.out.println("Successfully logged");
+//    			System.out.println(obj.getusername());
+//    	     	System.out.println(obj.getphonenumber());
+//    	     	System.out.println(obj.getpassword());
+    	     	f=1;
+    	     	profile();
+    		}
+        }
+    	if(f==0) {
+    		System.out.println("Invalid PhoneNumber and Password");
+    	}
+    	
+    }
+    static void profile() {
+    	System.out.println("Enter any Option");
+    	System.out.println("1.New bookings");
+    	System.out.println("2.My bookings");
+    	int x=sc.nextInt();
+    	if(x==1) {
+    		newbooking();
+    	}
+    	else {
+    		//mybooking();
+    	}
+    }
+    static void newbooking() {
+    	System.out.println("Enter From : ");
+    	String p1=sc.next();
+    	System.out.println("Enter To : ");
+    	String p2=sc.next();
+    }
+	public static void main(String[] args) {
+		final String ANSI_RED = "\u001B[31m";
+        final String ANSI_RESET = "\u001B[0m";
+        System.out.println(ANSI_RED +"BUS TICKET BOOKING"+ ANSI_RESET);
+        System.out.println("Enter One Option");
+        System.out.println("1.Register");
+        System.out.println("2.Login");
+        System.out.println("Enter >> ");
+        int s=sc.nextInt();
+        if(s==1) {
+        	register();
+        }
+        else {
+        	login();
+        }
+        
+	}
+
+}
