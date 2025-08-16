@@ -1,0 +1,17 @@
+Multilevel 
+
+Here we will accures properties of top most base class to intermediate base clases . From intermediate base class to
+bottom most class
+Syntax:
+ class <class name1>{
+  //
+ }
+ class <class name2> extends <class name1>{
+  // block of code
+ }
+ class <class name3> extends <class name2>{
+  // block of code
+ }
+ class <class name4> extends <class name5>{
+  // block of code
+ }

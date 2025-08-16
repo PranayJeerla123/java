@@ -1,0 +1,6 @@
+create a jaava appli where we have one mobile manu compay they will design mobiles with specific
+brand name,its specification are ram,rom,battery,price . then they will release into whole sel market
+then they will increase the mobile price 
+again price has to increase   then this mobile purchased by the customer then customer has to display
+all these values with respect to one method then invoke this method under main method by providing 
+dynamic i/ps.
